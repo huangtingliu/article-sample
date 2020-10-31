@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.49.129:8848
+        group: test_group
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'

@@ -3,3 +3,4 @@ springcloud-parent/gateway/target/
 *.iml
 
 springcloud-parent/user-service/target/
+.idea/
