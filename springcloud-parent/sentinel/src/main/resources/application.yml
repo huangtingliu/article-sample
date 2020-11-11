@@ -1,0 +1,24 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: sentinel
+  cloud:
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080  #启动本项目后需要请求一次才能向sentinel控制台注册
+      datasource: #与com.alibaba.csp.sentinel.init.InitFunc方式二选一即可
+        ds2:
+          nacos: #属性查看官方的NacosDataSourceProperties类，需要在nacos那边配置规则json格式，见https://github.com/alibaba/Sentinel/wiki/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8#%E8%A7%84%E5%88%99%E7%9A%84%E7%A7%8D%E7%B1%BB
+            server-addr: 192.168.67.129:8848
+            data-id: sentinel
+            group-id: Sentinel:Demo
+            data-type: json
+            rule-type: flow
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'

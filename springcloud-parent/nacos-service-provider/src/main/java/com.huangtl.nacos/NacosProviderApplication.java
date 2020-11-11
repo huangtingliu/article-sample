@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.function.Supplier;
+
 /**
  * @Description TODO
  * @Author huangtl
@@ -27,6 +29,5 @@ public class NacosProviderApplication {
         public String echo(@PathVariable String string) {
             return "Hello Nacos Discovery " + string;
         }
-
     }
 }

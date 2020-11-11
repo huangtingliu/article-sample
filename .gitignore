@@ -4,3 +4,4 @@ springcloud-parent/gateway/target/
 
 springcloud-parent/user-service/target/
 .idea/
+springcloud-parent/sentinel/target/
