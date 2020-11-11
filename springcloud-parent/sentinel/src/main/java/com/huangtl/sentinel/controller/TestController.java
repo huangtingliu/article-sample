@@ -16,4 +16,9 @@ public class TestController {
     public String test(){
         return "ok";
     }
+
+    @RequestMapping("/resource1")
+    public String resource1(){
+        return "这是资源1";
+    }
 }
